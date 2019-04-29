@@ -9,32 +9,50 @@ var map = new mapboxgl.Map({
 map.on('load', function () {
     map.addSource('City-Wide Analysis', {
         type: 'geojson',
-        data: 'data/ems.geojson'
+        data: 'data/nyczips.geojson'
     });
 
     map.addLayer({
-        id: 'city_wide_analysis-heat',
-        type: 'heatmap',
-        source: 'City-Wide Analysis',
-        paint: {
-            'heatmap-radius': 40,
-            'heatmap-color': [
-                'interpolate',
-                ['linear'],
-                ['heatmap-density'],
-                0, 'rgba(0,62,153,0)',
-                0.2, 'rgba(38,107,153,0.13)',
-                0.4, 'rgba(38,107,153,0.43)',
-                0.6, 'rgba(207,132,40,0.63)',
-                0.8, 'rgb(153,53,66)'
-            ],
-            "heatmap-weight": {
-                "type": "identity",
-                "property": "point_count"
-            },
-            'heatmap-intensity': 0.1
+        'id': 'random',
+        'type': 'fill',
+        'source': 'City-Wide Analysis',
+        'layout': {},
+        'paint': {
+            'fill-color': '#881e00',
+            'fill-opacity': 0.5
         }
     });
+
+
+
+
+
+
+
+
+    // map.addLayer({
+    //     id: 'city_wide_analysis-heat',
+    //     type: 'heatmap',
+    //     source: 'City-Wide Analysis',
+    //     paint: {
+    //         'heatmap-radius': 40,
+    //         'heatmap-color': [
+    //             'interpolate',
+    //             ['linear'],
+    //             ['heatmap-density'],
+    //             0, 'rgba(0,62,153,0)',
+    //             0.2, 'rgba(38,107,153,0.13)',
+    //             0.4, 'rgba(38,107,153,0.43)',
+    //             0.6, 'rgba(207,132,40,0.63)',
+    //             0.8, 'rgb(153,53,66)'
+    //         ],
+    //         "heatmap-weight": {
+    //             "type": "identity",
+    //             "property": "point_count"
+    //         },
+    //         'heatmap-intensity': 0.1
+    //     }
+    // });
 
     // map.addLayer({
     //     id: 'city_wide_analysis-heat',
