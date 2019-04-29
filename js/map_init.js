@@ -21,12 +21,47 @@ map.on('load', function () {
         }
     });
 
+    //map.addLayer({
+    //    'id': 'test2',
+    //    'type': 'circle',
+    //    'source': {
+    //        'type': 'geojson',
+    //        'data': 'data/ems4.geojson'
+    //    },
+    //    'paint': {
+    //        // make circles larger as the user zooms from z12 to z22
+    //        'circle-radius': {
+    //            'base': 25,
+    //            'stops': [[12, 2], [22, 180]]
+    //        },
+    //        // color circles by ethnicity, using a match expression
+    //        // https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions-match
+    //        'circle-color': [
+    //            'match',
+    //            ['get', 'FINAL_CALL_TYPE'],
+    //            'ASTHMB', '#ec7890',
+    //            'MVAINJ', '#d9d324',
+    //            'RESPIR', '#31af0d',
+    //            'UNKNOW', '#c2391b',
+    //            'CARD', '#3326a9',
+    //            'ABDPN', '#c68b45',
+    //            'UNC', '#776e72',
+    //            'DRUG', '#c96bea',
+    //            'EDP', '#ebb8f1',
+    //            'DIFFBR', '#134b69',
+    //            'INJURY', '#2f2368',
+    //            'SICK', '#a24ffe',
+    //            /* other */ '#ccc'
+    //        ]
+    //    }
+    //});
+
     map.addLayer({
-        'id': 'test2',
+        'id': 'location/BROOKLYN',
         'type': 'circle',
         'source': {
             'type': 'geojson',
-            'data': 'data/ems3.geojson'
+            'data': 'data/location/BROOKLYN.geojson'
         },
         'paint': {
             // make circles larger as the user zooms from z12 to z22
@@ -39,91 +74,162 @@ map.on('load', function () {
             'circle-color': [
                 'match',
                 ['get', 'FINAL_CALL_TYPE'],
-                'RESPIR', '#e6b93b',
-                'CARD', '#7c06c5',
-                'ARREST', '#d9d324',
-                'SICK', '#f4dfd7',
-                'INJURY', '#1b01a4',
-                'ASTHMB', '#ecf4d7',
+                'ASTHMB', '#ec7890',
+                'MVAINJ', '#d9d324',
+                'RESPIR', '#31af0d',
+                'UNKNOW', '#c2391b',
+                'CARD', '#3326a9',
+                'ABDPN', '#c68b45',
+                'UNC', '#776e72',
                 'DRUG', '#c96bea',
-                'UNC', '#4ea17a',
-                'DIFFBR', '#e2941a',
-                'MCI21P', '#e6d6c2',
-                'MVAINJ', '#c68b45',
-                'ABDPN', '#3341e0',
-                'EDP', '#b5a3b9',
-                'STATEP', '#107597',
-                'STNDBY', '#b6eea6',
-                'SHOT', '#cec0ca',
-                'UNKNOW', '#32a1bd',
-                'ALTMEN', '#74aa5d',
-                'ANAPH', '#ec7890',
-                'JUMPDN', '#5a47b2',
-                'OTHER', '#98fbd5',
-                'CVA', '#e7bb8a',
-                'SEIZR', '#c480ff',
-                'INJMIN', '#3859eb',
-                'PEDSTR', '#4a2473',
-                'SICPED', '#331bd3',
-                'INBLED', '#73a177',
-                'OBLAB', '#8d896c',
-                'CVAC', '#616ea4',
-                'PD13', '#e3c7b1',
-                'INJMAJ', '#563292',
-                'TRAUMA', '#b4e3be',
-                'STAB', '#31af0d',
-                'INHALE', '#bedd66',
-                'MVA', '#ec85f7',
-                'MCI32P', '#6cb2a4',
-                'SICMIN', '#65dd46',
-                'CHOKE', '#b4d94c',
-                'OBCOMP', '#0bb222',
-                'RAPE', '#08ffb0',
-                'OBMIS', '#d088bb',
-                'BURNMI', '#4fcb20',
-                'JUMPUP', '#9fdff8',
-                'MCI22P', '#09957c',
-                'OBOUT', '#426f8b',
-                'BURNMA', '#6fd8ab',
-                'COLD', '#5cf656',
-                'GYNHEM', '#776e72',
-                'HYPTN', '#6fb3f7',
-                'GYNMAJ', '#c3c7f6',
-                'RESPFC', '#8dc66d',
-                'MEDRXN', '#8c4763',
-                'PEDFC', '#58d0a9',
-                'MCI43P', '#f066d6',
-                'AMPMIN', '#2f2d0c',
-                'ELECT', '#c2391b',
-                'DROWN', '#f76648',
-                'CHILDA', '#7025bd',
-                'MCI35P', '#2f2368',
-                'MCI23P', '#b53f10',
-                'DOA', '#134b69',
-                'AMPMAJ', '#d8cf14',
-                'SICKFC', '#07822e',
-                'ASTHFC', '#40c00b',
-                'MCI26P', '#1fc714',
-                'MCI33P', '#f54235',
-                'MCI38P', '#ac2f7f',
-                'MCI34P', '#72b00a',
-                'PEDRF', '#a24ffe',
-                'MCI80P', '#ebb8f1',
-                'ABDPFC', '#520883',
-                'MCI24P', '#a34ac0',
-                'DIFFFC', '#f4b236',
-                'PD13C', '#3326a9',
+                'EDP', '#ebb8f1',
+                'DIFFBR', '#134b69',
+                'INJURY', '#2f2368',
+                'SICK', '#a24ffe',
                 /* other */ '#ccc'
             ]
         }
     });
 
+    map.addLayer({
+        'id': 'location/BRONX',
+        'type': 'circle',
+        'source': {
+            'type': 'geojson',
+            'data': 'data/location/BRONX.geojson'
+        },
+        'paint': {
+            // make circles larger as the user zooms from z12 to z22
+            'circle-radius': {
+                'base': 25,
+                'stops': [[12, 2], [22, 180]]
+            },
+            // color circles by ethnicity, using a match expression
+            // https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions-match
+            'circle-color': [
+                'match',
+                ['get', 'FINAL_CALL_TYPE'],
+                'ASTHMB', '#ec7890',
+                'MVAINJ', '#d9d324',
+                'RESPIR', '#31af0d',
+                'UNKNOW', '#c2391b',
+                'CARD', '#3326a9',
+                'ABDPN', '#c68b45',
+                'UNC', '#776e72',
+                'DRUG', '#c96bea',
+                'EDP', '#ebb8f1',
+                'DIFFBR', '#134b69',
+                'INJURY', '#2f2368',
+                'SICK', '#a24ffe',
+                /* other */ '#ccc'
+            ]
+        }
+    });
 
+    map.addLayer({
+        'id': 'location/MANHATTAN',
+        'type': 'circle',
+        'source': {
+            'type': 'geojson',
+            'data': 'data/location/MANHATTAN.geojson'
+        },
+        'paint': {
+            // make circles larger as the user zooms from z12 to z22
+            'circle-radius': {
+                'base': 25,
+                'stops': [[12, 2], [22, 180]]
+            },
+            // color circles by ethnicity, using a match expression
+            // https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions-match
+            'circle-color': [
+                'match',
+                ['get', 'FINAL_CALL_TYPE'],
+                'ASTHMB', '#ec7890',
+                'MVAINJ', '#d9d324',
+                'RESPIR', '#31af0d',
+                'UNKNOW', '#c2391b',
+                'CARD', '#3326a9',
+                'ABDPN', '#c68b45',
+                'UNC', '#776e72',
+                'DRUG', '#c96bea',
+                'EDP', '#ebb8f1',
+                'DIFFBR', '#134b69',
+                'INJURY', '#2f2368',
+                'SICK', '#a24ffe',
+                /* other */ '#ccc'
+            ]
+        }
+    });
 
+    map.addLayer({
+        'id': 'location/RICHMOND-STATEN-ISLAND',
+        'type': 'circle',
+        'source': {
+            'type': 'geojson',
+            'data': 'data/location/RICHMOND-STATEN-ISLAND.geojson'
+        },
+        'paint': {
+            // make circles larger as the user zooms from z12 to z22
+            'circle-radius': {
+                'base': 25,
+                'stops': [[12, 2], [22, 180]]
+            },
+            // color circles by ethnicity, using a match expression
+            // https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions-match
+            'circle-color': [
+                'match',
+                ['get', 'FINAL_CALL_TYPE'],
+                'ASTHMB', '#ec7890',
+                'MVAINJ', '#d9d324',
+                'RESPIR', '#31af0d',
+                'UNKNOW', '#c2391b',
+                'CARD', '#3326a9',
+                'ABDPN', '#c68b45',
+                'UNC', '#776e72',
+                'DRUG', '#c96bea',
+                'EDP', '#ebb8f1',
+                'DIFFBR', '#134b69',
+                'INJURY', '#2f2368',
+                'SICK', '#a24ffe',
+                /* other */ '#ccc'
+            ]
+        }
+    });
 
-
-
-
+    map.addLayer({
+        'id': 'location/MANHATTAN',
+        'type': 'circle',
+        'source': {
+            'type': 'geojson',
+            'data': 'data/location/MANHATTAN.geojson'
+        },
+        'paint': {
+            // make circles larger as the user zooms from z12 to z22
+            'circle-radius': {
+                'base': 25,
+                'stops': [[12, 2], [22, 180]]
+            },
+            // color circles by ethnicity, using a match expression
+            // https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions-match
+            'circle-color': [
+                'match',
+                ['get', 'FINAL_CALL_TYPE'],
+                'ASTHMB', '#ec7890',
+                'MVAINJ', '#d9d324',
+                'RESPIR', '#31af0d',
+                'UNKNOW', '#c2391b',
+                'CARD', '#3326a9',
+                'ABDPN', '#c68b45',
+                'UNC', '#776e72',
+                'DRUG', '#c96bea',
+                'EDP', '#ebb8f1',
+                'DIFFBR', '#134b69',
+                'INJURY', '#2f2368',
+                'SICK', '#a24ffe',
+                /* other */ '#ccc'
+            ]
+        }
+    });
 
     // map.addLayer({
     //     id: 'city_wide_analysis-heat',
