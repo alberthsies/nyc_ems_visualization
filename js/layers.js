@@ -1,4 +1,4 @@
-var toggleableLayerIds = [ 'City-Wide Analysis', 'Incident Analysis', 'Response Time Analysis'];
+var toggleableLayerIds = [ 'test1', 'test2'];
 
 for (var i = 0; i < toggleableLayerIds.length; i++) {
     var id = toggleableLayerIds[i];
