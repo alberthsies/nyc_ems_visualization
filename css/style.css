@@ -64,3 +64,33 @@
     border-bottom: 1px solid rgba(0,0,0,0.25);
     text-align: center;
 }
+
+#first-title {
+    position: center;
+}
+
+#slideDownButton {
+    position: relative;
+    left: 50%;
+}
+
+
+.tableauPlaceholder {
+    position: relative;
+    display: none;
+    top: 75px;
+    left: 25px;
+    width: 600px;
+    border-radius: 20px;
+}
+
+.filter {
+    position: absolute;
+    z-index: 1;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 10px;
+    width: 250px;
+    height: 500px;
+    background: rgba(256, 256, 256, 0.5);
+}
