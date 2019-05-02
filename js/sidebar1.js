@@ -1,5 +1,6 @@
 var divElement = document.getElementById('viz1556717272772');
 var vizElement = divElement.getElementsByTagName('object')[0];
+
 if ( divElement.offsetWidth > 800 ) {
     vizElement.style.width='600px';vizElement.style.height='717px';
 }
