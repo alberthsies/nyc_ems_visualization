@@ -8,6 +8,12 @@ function responseTimeAnalysis() {
     var x = document.getElementById("responseTimeFilter");
     var y = document.getElementById("incidentFilter");
     var z = document.getElementById("cityWideFilter");
+    var a = document.getElementById("responseTimeAnalysisGraph");
+    var b = document.getElementById("incidentAnalysisPic");
+    var c = document.getElementById("cityWideAnalysisPic");
+    a.style.display = "block";
+    b.style.display = "none";
+    c.style.display = "none";
     if (x.style.display === "none") {
         x.style.display = "block";
         y.style.display = "none";
@@ -25,17 +31,13 @@ function incidentAnalysis() {
     var x = document.getElementById("responseTimeFilter");
     var y = document.getElementById("incidentFilter");
     var z = document.getElementById("cityWideFilter");
-    var c = document.getElementById("viz1556791961875");
-    //var d = document.getElementById("viz1556784068580");
-    //var e = document.getElementById("viz1556784068580");
-    //var a = document.getElementById("viz1556729110021");
-    //var b = document.getElementById("viz1556729315326");
+    var a = document.getElementById("responseTimeAnalysisGraph");
+    var b = document.getElementById("incidentAnalysisPic");
+    var c = document.getElementById("cityWideAnalysisPic");
+    a.style.display = "none";
+    b.style.display = "block";
     c.style.display = "none";
-    //d.style.display = "block";
-    //e.style.display = "block";
-    //a.style.display = "block";
-    //b.style.display = "block";
-    if (x.style.display === "none") {
+    if (y.style.display === "none") {
         x.style.display = "none";
         y.style.display = "block";
         z.style.display = "none";
@@ -52,9 +54,13 @@ function cityWideAnalysis() {
     var x = document.getElementById("responseTimeFilter");
     var y = document.getElementById("incidentFilter");
     var z = document.getElementById("cityWideFilter");
-    var c = document.getElementById("viz1556791961875");
-    c.style.display = "none";
-    if (x.style.display === "none") {
+    var a = document.getElementById("responseTimeAnalysisGraph");
+    var b = document.getElementById("incidentAnalysisPic");
+    var c = document.getElementById("cityWideAnalysisPic");
+    a.style.display = "none";
+    b.style.display = "none";
+    c.style.display = "block";
+    if (z.style.display === "none") {
         x.style.display = "none";
         y.style.display = "none";
         z.style.display = "block";
@@ -69,7 +75,7 @@ function cityWideAnalysis() {
 
 // Show analysis
 function responseTimeAnalysisSwitch() {
-    var x = document.getElementById("viz1556791961875");
+    var x = document.getElementById("responseTimeAnalysisGraph");
     //var y = document.getElementById("viz1556784068580");
     //var z = document.getElementById("viz1556784068580");
     //var a = document.getElementById("viz1556729110021");
@@ -91,7 +97,7 @@ function responseTimeAnalysisSwitch() {
 }
 
 function incidentAnalysisSwitch() {
-    var x = document.getElementById("incidenAnalysisPic");
+    var x = document.getElementById("incidentAnalysisPic");
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {
