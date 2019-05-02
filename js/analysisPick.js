@@ -25,6 +25,16 @@ function incidentAnalysis() {
     var x = document.getElementById("responseTimeFilter");
     var y = document.getElementById("incidentFilter");
     var z = document.getElementById("cityWideFilter");
+    var c = document.getElementById("viz1556791961875");
+    //var d = document.getElementById("viz1556784068580");
+    //var e = document.getElementById("viz1556784068580");
+    //var a = document.getElementById("viz1556729110021");
+    //var b = document.getElementById("viz1556729315326");
+    c.style.display = "none";
+    //d.style.display = "block";
+    //e.style.display = "block";
+    //a.style.display = "block";
+    //b.style.display = "block";
     if (x.style.display === "none") {
         x.style.display = "none";
         y.style.display = "block";
@@ -42,6 +52,8 @@ function cityWideAnalysis() {
     var x = document.getElementById("responseTimeFilter");
     var y = document.getElementById("incidentFilter");
     var z = document.getElementById("cityWideFilter");
+    var c = document.getElementById("viz1556791961875");
+    c.style.display = "none";
     if (x.style.display === "none") {
         x.style.display = "none";
         y.style.display = "none";
@@ -57,11 +69,24 @@ function cityWideAnalysis() {
 
 // Show analysis
 function responseTimeAnalysisSwitch() {
-    var x = document.getElementById("viz1556717272772");
-    if (x.style.display === "none") {
+    var x = document.getElementById("viz1556791961875");
+    //var y = document.getElementById("viz1556784068580");
+    //var z = document.getElementById("viz1556784068580");
+    //var a = document.getElementById("viz1556729110021");
+    //var b = document.getElementById("viz1556729315326");
+    if (x.style.display === "none"){ //&& y.style.display === "none" && z.style.display === "none" && a.style.display === "none" && b.style.display === "none") {
+    //if (x.style.visibility === "hidden" && y.style.visibility === "hidden" && z.style.visibility === "hidden" && a.style.visibility === "hidden" && b.style.visibility === "hidden") {
         x.style.display = "block";
+        //y.style.display = "block";
+        //z.style.display = "block";
+        //a.style.display = "block";
+        //b.style.display = "block";
     } else {
         x.style.display = "none";
+        //y.style.display = "none";
+        //z.style.display = "none";
+        //a.style.display = "none";
+        //b.style.display = "none";
     }
 }
 
@@ -416,18 +441,16 @@ function getIncidentAnalysisRadios15() {
 }
 
 
-
-
 // City Wide Analysis
 function getCityWideAnalysisRadios1() {
     cleanMapView();
     //alert("here");
-    map.setLayoutProperty("incident_type/drug", 'visibility', 'visible');
+    map.setLayoutProperty("incident_type/shot", 'visibility', 'visible');
 }
 
 function getCityWideAnalysisRadios2() {
     cleanMapView();
     //alert("here2");
-    map.setLayoutProperty("incident_type/shot", 'visibility', 'visible');
+    map.setLayoutProperty("incident_type/drug", 'visibility', 'visible');
     //alert("here3");
 }
