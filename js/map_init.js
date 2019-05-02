@@ -57,7 +57,7 @@ map.on('load', function () {
         'type': 'fill',
         'source': {
             'type': 'geojson',
-            'data': 'data/severity_rpt/sev1.geojson'
+            'data': 'data/severity_rpt/sev1_zip.geojson'
         },
         "layout": {
             "visibility": "none"
@@ -66,7 +66,7 @@ map.on('load', function () {
             'fill-color': [
                 'interpolate',
                 ['linear'],
-                ['get', 'ranking_value'],
+                ['get', 'average_response'],
                 5, '#4b9d85',
                 7, '#5b9f6a',
                 9, '#92b34b',
@@ -83,7 +83,7 @@ map.on('load', function () {
         'type': 'fill',
         'source': {
             'type': 'geojson',
-            'data': 'data/severity_rpt/sev2.geojson'
+            'data': 'data/severity_rpt/sev2_zip.geojson'
         },
         "layout": {
             "visibility": "none"
@@ -92,7 +92,7 @@ map.on('load', function () {
             'fill-color': [
                 'interpolate',
                 ['linear'],
-                ['get', 'ranking_value'],
+                ['get', 'average_response'],
                 5, '#4b9d85',
                 7, '#5b9f6a',
                 9, '#92b34b',
@@ -109,7 +109,7 @@ map.on('load', function () {
         'type': 'fill',
         'source': {
             'type': 'geojson',
-            'data': 'data/severity_rpt/sev3.geojson'
+            'data': 'data/severity_rpt/sev3_zip.geojson'
         },
         "layout": {
             "visibility": "none"
@@ -118,7 +118,7 @@ map.on('load', function () {
             'fill-color': [
                 'interpolate',
                 ['linear'],
-                ['get', 'ranking_value'],
+                ['get', 'average_response'],
                 5, '#4b9d85',
                 7, '#5b9f6a',
                 9, '#92b34b',
@@ -135,7 +135,7 @@ map.on('load', function () {
         'type': 'fill',
         'source': {
             'type': 'geojson',
-            'data': 'data/severity_rpt/sev4.geojson'
+            'data': 'data/severity_rpt/sev4_zip.geojson'
         },
         "layout": {
             "visibility": "none"
@@ -144,7 +144,7 @@ map.on('load', function () {
             'fill-color': [
                 'interpolate',
                 ['linear'],
-                ['get', 'ranking_value'],
+                ['get', 'average_response'],
                 5, '#4b9d85',
                 7, '#5b9f6a',
                 9, '#92b34b',
@@ -161,7 +161,7 @@ map.on('load', function () {
         'type': 'fill',
         'source': {
             'type': 'geojson',
-            'data': 'data/severity_rpt/sev5.geojson'
+            'data': 'data/severity_rpt/sev5_zip.geojson'
         },
         "layout": {
             "visibility": "none"
@@ -170,7 +170,7 @@ map.on('load', function () {
             'fill-color': [
                 'interpolate',
                 ['linear'],
-                ['get', 'ranking_value'],
+                ['get', 'average_response'],
                 5, '#4b9d85',
                 7, '#5b9f6a',
                 9, '#92b34b',
@@ -187,7 +187,7 @@ map.on('load', function () {
         'type': 'fill',
         'source': {
             'type': 'geojson',
-            'data': 'data/severity_rpt/sev6.geojson'
+            'data': 'data/severity_rpt/sev6_zip.geojson'
         },
         "layout": {
             "visibility": "none"
@@ -196,7 +196,7 @@ map.on('load', function () {
             'fill-color': [
                 'interpolate',
                 ['linear'],
-                ['get', 'ranking_value'],
+                ['get', 'average_response'],
                 5, '#4b9d85',
                 7, '#5b9f6a',
                 9, '#92b34b',
@@ -213,7 +213,7 @@ map.on('load', function () {
         'type': 'fill',
         'source': {
             'type': 'geojson',
-            'data': 'data/severity_rpt/sev7.geojson'
+            'data': 'data/severity_rpt/sev7_zip.geojson'
         },
         "layout": {
             "visibility": "none"
@@ -222,7 +222,7 @@ map.on('load', function () {
             'fill-color': [
                 'interpolate',
                 ['linear'],
-                ['get', 'ranking_value'],
+                ['get', 'average_response'],
                 5, '#4b9d85',
                 7, '#5b9f6a',
                 9, '#92b34b',
