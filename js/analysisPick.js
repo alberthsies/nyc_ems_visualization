@@ -83,11 +83,7 @@ function cityWideAnalysisSwitch() {
     }
 }
 
-
-// Show map
-// Response Time Analysis
-function getResponseTimeAnalysisRadios() {
-    var responseTimeAnalysisRadios = document.getElementsByName('responseTimeFilterRadio');
+function cleanMapView() {
     map.setLayoutProperty("severity_rpt/sev1", 'visibility', 'none');
     map.setLayoutProperty("severity_rpt/sev2", 'visibility', 'none');
     map.setLayoutProperty("severity_rpt/sev3", 'visibility', 'none');
@@ -97,80 +93,82 @@ function getResponseTimeAnalysisRadios() {
     map.setLayoutProperty("severity_rpt/sev7", 'visibility', 'none');
     map.setLayoutProperty("temp_rpt/temp0", 'visibility', 'none');
     map.setLayoutProperty("temp_rpt/temp1", 'visibility', 'none');
+    map.setLayoutProperty("daynight_rpt/sunup", 'visibility', 'none');
+    map.setLayoutProperty("daynight_rpt/sundown", 'visibility', 'none');
+    map.setLayoutProperty("weather_rpt/sunny", 'visibility', 'none');
+    map.setLayoutProperty("weather_rpt/rainy", 'visibility', 'none');
+    map.setLayoutProperty("incident_type/drug", 'visibility', 'none');
+    map.setLayoutProperty("incident_type/shot", 'visibility', 'none');
+    map.setLayoutProperty("location/BRONX", 'visibility', 'none');
+    map.setLayoutProperty("location/BROOKLYN", 'visibility', 'none');
+    map.setLayoutProperty("location/MANHATTAN", 'visibility', 'none');
+    map.setLayoutProperty("location/QUEENS", 'visibility', 'none');
+    map.setLayoutProperty("location/RICHMOND-STATEN-ISLAND", 'visibility', 'none');
+    map.setLayoutProperty("incident/ABDPN", 'visibility', 'none');
+    map.setLayoutProperty("incident/CARD", 'visibility', 'none');
+    map.setLayoutProperty("incident/DIFFBR", 'visibility', 'none');
+    map.setLayoutProperty("incident/DRUG", 'visibility', 'none');
+    map.setLayoutProperty("incident/EDP", 'visibility', 'none');
+    map.setLayoutProperty("incident/INJURY", 'visibility', 'none');
+    map.setLayoutProperty("incident/SICK", 'visibility', 'none');
+    map.setLayoutProperty("incident/UNC", 'visibility', 'none');
+    map.setLayoutProperty("incident/UNKNOW", 'visibility', 'none');
+    map.setLayoutProperty("date/01-01-2013", 'visibility', 'none');
+    map.setLayoutProperty("date/03-31-2013", 'visibility', 'none');
+    map.setLayoutProperty("date/07-04-2013", 'visibility', 'none');
+    map.setLayoutProperty("date/11-28-2013", 'visibility', 'none');
+    map.setLayoutProperty("date/12-24-2013", 'visibility', 'none');
+    map.setLayoutProperty("date/01-01-2014", 'visibility', 'none');
+    map.setLayoutProperty("date/04-20-2014", 'visibility', 'none');
+    map.setLayoutProperty("date/07-04-2014", 'visibility', 'none');
+    map.setLayoutProperty("date/11-27-2014", 'visibility', 'none');
+    map.setLayoutProperty("date/12-24-2014", 'visibility', 'none');
+    map.setLayoutProperty("date/01-01-2015", 'visibility', 'none');
+    map.setLayoutProperty("date/04-05-2015", 'visibility', 'none');
+    map.setLayoutProperty("date/07-04-2015", 'visibility', 'none');
+    map.setLayoutProperty("date/11-26-2015", 'visibility', 'none');
+    map.setLayoutProperty("date/12-24-2015", 'visibility', 'none');
+    map.setLayoutProperty("date/01-01-2016", 'visibility', 'none');
+    map.setLayoutProperty("date/03-27-2016", 'visibility', 'none');
+    map.setLayoutProperty("date/07-04-2016", 'visibility', 'none');
+    map.setLayoutProperty("date/11-24-2016", 'visibility', 'none');
+    map.setLayoutProperty("date/12-24-2016", 'visibility', 'none');
+    map.setLayoutProperty("date/01-01-2017", 'visibility', 'none');
+    map.setLayoutProperty("date/04-16-2017", 'visibility', 'none');
+    map.setLayoutProperty("date/07-04-2017", 'visibility', 'none');
+    map.setLayoutProperty("date/11-23-2017", 'visibility', 'none');
+    map.setLayoutProperty("date/12-24-2017", 'visibility', 'none');
+}
 
+// Show map
+// Response Time Analysis
+function getResponseTimeAnalysisRadios() {
+    var responseTimeAnalysisRadios = document.getElementsByName('responseTimeFilterRadio');
+    cleanMapView();
+    //"severity_rpt/sev1", "severity_rpt/sev2", "severity_rpt/sev3", "severity_rpt/sev4", "severity_rpt/sev5", "severity_rpt/sev6", "severity_rpt/sev7"
     if (responseTimeAnalysisRadios[0].checked){
         var severitySlider = document.getElementById('severitySlider').value;
-
         if (severitySlider == 1){
             map.setLayoutProperty("severity_rpt/sev1", 'visibility', 'visible');
-            map.setLayoutProperty("severity_rpt/sev2", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev3", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev4", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev5", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev6", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev7", 'visibility', 'none');
         }
         else if (severitySlider == 2){
-            map.setLayoutProperty("severity_rpt/sev1", 'visibility', 'none');
             map.setLayoutProperty("severity_rpt/sev2", 'visibility', 'visible');
-            map.setLayoutProperty("severity_rpt/sev3", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev4", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev5", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev6", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev7", 'visibility', 'none');
-
         }
         else if (severitySlider == 3){
-            map.setLayoutProperty("severity_rpt/sev1", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev2", 'visibility', 'none');
             map.setLayoutProperty("severity_rpt/sev3", 'visibility', 'visible');
-            map.setLayoutProperty("severity_rpt/sev4", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev5", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev6", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev7", 'visibility', 'none');
-
         }
         else if (severitySlider == 4){
-            map.setLayoutProperty("severity_rpt/sev1", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev2", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev3", 'visibility', 'none');
             map.setLayoutProperty("severity_rpt/sev4", 'visibility', 'visible');
-            map.setLayoutProperty("severity_rpt/sev5", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev6", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev7", 'visibility', 'none');
-
         }
         else if (severitySlider == 5){
-            map.setLayoutProperty("severity_rpt/sev1", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev2", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev3", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev4", 'visibility', 'none');
             map.setLayoutProperty("severity_rpt/sev5", 'visibility', 'visible');
-            map.setLayoutProperty("severity_rpt/sev6", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev7", 'visibility', 'none');
-
         }
         else if (severitySlider == 6){
-            map.setLayoutProperty("severity_rpt/sev1", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev2", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev3", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev4", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev5", 'visibility', 'none');
             map.setLayoutProperty("severity_rpt/sev6", 'visibility', 'visible');
-            map.setLayoutProperty("severity_rpt/sev7", 'visibility', 'none');
-
         }
         else if (severitySlider == 7) {
-            map.setLayoutProperty("severity_rpt/sev1", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev2", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev3", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev4", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev5", 'visibility', 'none');
-            map.setLayoutProperty("severity_rpt/sev6", 'visibility', 'none');
             map.setLayoutProperty("severity_rpt/sev7", 'visibility', 'visible');
-
         }
-
     }
 
     else if (responseTimeAnalysisRadios[1].checked){
@@ -178,37 +176,54 @@ function getResponseTimeAnalysisRadios() {
         var tempSlider = document.getElementById('tempSlider').value;
         if (tempSlider == 0) {
             map.setLayoutProperty("temp_rpt/temp0", 'visibility', 'visible');
-            map.setLayoutProperty("temp_rpt/temp1", 'visibility', 'none');
         }
         else if (tempSlider == 1){
-            map.setLayoutProperty("temp_rpt/temp0", 'visibility', 'none');
             map.setLayoutProperty("temp_rpt/temp1", 'visibility', 'visible');
         }
 
     }
 
     else if (responseTimeAnalysisRadios[2].checked){
-
+        //'daynight_rpt/sunup', 'daynight_rpt/sundown'
+        //var tempSlider = document.getElementsByName('responseTimeFilterRadioTime2').value;
+        //if (tempSlider == day) {
+        //    map.setLayoutProperty("daynight_rpt/sunup", 'visibility', 'visible');
+        //    map.setLayoutProperty("daynight_rpt/sundown", 'visibility', 'none');
+        //}
+        //else if (tempSlider == night){
+        //    map.setLayoutProperty("daynight_rpt/sunup", 'visibility', 'none');
+        //    map.setLayoutProperty("daynight_rpt/sundown", 'visibility', 'visible');
+        //}
     }
 
     else if (responseTimeAnalysisRadios[3].checked){
 
+        //var responseTimeAnalysisRadios2 = document.getElementsByName('responseTimeAnalysisRadios2').value;
     }
-    /*for (var i = 0, length = responseTimeAnalysisRadios.length; i < length; i++)
-    {
-        if (responseTimeAnalysisRadios[i].checked)
-        {
-            //alert(responseTimeAnalysisRadios[i].value);
-
-
-            break;
-        }
-    }*/
 }
 
-// severity
+function getResponseTimeAnalysisRadios2() {
+    cleanMapView();
+    map.setLayoutProperty("daynight_rpt/sunup", 'visibility', 'visible');
+}
 
-//"severity_rpt/sev1", "severity_rpt/sev2", "severity_rpt/sev3", "severity_rpt/sev4", "severity_rpt/sev5", "severity_rpt/sev6", "severity_rpt/sev7"
+function getResponseTimeAnalysisRadios3() {
+    cleanMapView();
+    map.setLayoutProperty("daynight_rpt/sundown", 'visibility', 'visible');
+}
+
+function getResponseTimeAnalysisRadios4() {
+    cleanMapView();
+    map.setLayoutProperty("weather_rpt/sunny", 'visibility', 'visible');
+}
+
+function getResponseTimeAnalysisRadios5() {
+    cleanMapView();
+    map.setLayoutProperty("weather_rpt/rainy", 'visibility', 'visible');
+}
+
+
+
 //function cityWideAnalysisSwitch() {
 //    var x = document.getElementById("cityWideAnalysisPic");
 //    if (x.style.display === "none") {
@@ -234,5 +249,185 @@ function getResponseTimeAnalysisRadios() {
 //};
 //
 
+
 // Incident Analysis
+function getIncidentAnalysisRadios1() {
+    cleanMapView();
+    map.setLayoutProperty("location/BRONX", 'visibility', 'visible');
+}
+
+function getIncidentAnalysisRadios2() {
+    cleanMapView();
+    map.setLayoutProperty("location/BROOKLYN", 'visibility', 'visible');
+}
+
+function getIncidentAnalysisRadios3() {
+    cleanMapView();
+    map.setLayoutProperty("location/MANHATTAN", 'visibility', 'visible');
+}
+
+function getIncidentAnalysisRadios4() {
+    cleanMapView();
+    map.setLayoutProperty("location/QUEENS", 'visibility', 'visible');
+}
+
+function getIncidentAnalysisRadios5() {
+    cleanMapView();
+    map.setLayoutProperty("location/RICHMOND-STATEN-ISLAND", 'visibility', 'visible');
+}
+
+function getIncidentAnalysisRadios6() {
+    cleanMapView();
+    map.setLayoutProperty("incident/ABDPN", 'visibility', 'visible');
+}
+
+function getIncidentAnalysisRadios7() {
+    cleanMapView();
+    map.setLayoutProperty("incident/CARD", 'visibility', 'visible');
+}
+
+function getIncidentAnalysisRadios8() {
+    cleanMapView();
+    map.setLayoutProperty("incident/DRUG", 'visibility', 'visible');
+}
+
+function getIncidentAnalysisRadios9() {
+    cleanMapView();
+    map.setLayoutProperty("incident/DIFFBR", 'visibility', 'visible');
+}
+
+function getIncidentAnalysisRadios10() {
+    cleanMapView();
+    map.setLayoutProperty("incident/EDP", 'visibility', 'visible');
+}
+
+function getIncidentAnalysisRadios11() {
+    cleanMapView();
+    map.setLayoutProperty("incident/INJURY", 'visibility', 'visible');
+}
+
+function getIncidentAnalysisRadios12() {
+    cleanMapView();
+    map.setLayoutProperty("incident/SICK", 'visibility', 'visible');
+}
+
+function getIncidentAnalysisRadios13() {
+    cleanMapView();
+    map.setLayoutProperty("incident/UNC", 'visibility', 'visible');
+}
+
+function getIncidentAnalysisRadios14() {
+    cleanMapView();
+    map.setLayoutProperty("incident/UNKNOW", 'visibility', 'visible');
+}
+
+function getIncidentAnalysisRadios15() {
+    cleanMapView();
+
+    var yearSlider = document.getElementById('yearSlider').value;
+    var dateSlider = document.getElementById('dateSlider').value;
+    //alert(yearSlider)
+    //alert(dateSlider)
+    if (yearSlider == 2013){
+        if (dateSlider == 0){
+            map.setLayoutProperty("date/01-01-2013", 'visibility', 'visible');
+        }
+        else if (dateSlider == 1){
+            map.setLayoutProperty("date/03-31-2013", 'visibility', 'visible');
+        }
+        else if (dateSlider == 2){
+            map.setLayoutProperty("date/07-04-2013", 'visibility', 'visible');
+        }
+        else if (dateSlider == 3){
+            map.setLayoutProperty("date/11-28-2013", 'visibility', 'visible');
+        }
+        else if (dateSlider == 4){
+            map.setLayoutProperty("date/12-24-2013", 'visibility', 'visible');
+        }
+    }
+    else if (yearSlider == 2014){
+        if (dateSlider == 0){
+            map.setLayoutProperty("date/01-01-2014", 'visibility', 'visible');
+        }
+        else if (dateSlider == 1){
+            map.setLayoutProperty("date/04-20-2014", 'visibility', 'visible');
+        }
+        else if (dateSlider == 2){
+            map.setLayoutProperty("date/07-04-2014", 'visibility', 'visible');
+        }
+        else if (dateSlider == 3){
+            map.setLayoutProperty("date/11-27-2014", 'visibility', 'visible');
+        }
+        else if (dateSlider == 4){
+            map.setLayoutProperty("date/12-24-2014", 'visibility', 'visible');
+        }
+    }
+    else if (yearSlider == 2015){
+        if (dateSlider == 0){
+            map.setLayoutProperty("date/01-01-2015", 'visibility', 'visible');
+        }
+        else if (dateSlider == 1){
+            map.setLayoutProperty("date/04-05-2015", 'visibility', 'visible');
+        }
+        else if (dateSlider == 2){
+            map.setLayoutProperty("date/07-04-2015", 'visibility', 'visible');
+        }
+        else if (dateSlider == 3){
+            map.setLayoutProperty("date/11-26-2015", 'visibility', 'visible');
+        }
+        else if (dateSlider == 4){
+            map.setLayoutProperty("date/12-24-2015", 'visibility', 'visible');
+        }
+    }
+    else if (yearSlider == 2016){
+        if (dateSlider == 0){
+            map.setLayoutProperty("date/01-01-2016", 'visibility', 'visible');
+        }
+        else if (dateSlider == 1){
+            map.setLayoutProperty("date/03-27-2016", 'visibility', 'visible');
+        }
+        else if (dateSlider == 2){
+            map.setLayoutProperty("date/07-04-2016", 'visibility', 'visible');
+        }
+        else if (dateSlider == 3){
+            map.setLayoutProperty("date/11-24-2016", 'visibility', 'visible');
+        }
+        else if (dateSlider == 4){
+            map.setLayoutProperty("date/12-24-2016", 'visibility', 'visible');
+        }
+    }
+    else if (yearSlider == 2017){
+        if (dateSlider == 0){
+            map.setLayoutProperty("date/01-01-2017", 'visibility', 'visible');
+        }
+        else if (dateSlider == 1){
+            map.setLayoutProperty("date/04-16-2017", 'visibility', 'visible');
+        }
+        else if (dateSlider == 2){
+            map.setLayoutProperty("date/07-04-2017", 'visibility', 'visible');
+        }
+        else if (dateSlider == 3){
+            map.setLayoutProperty("date/11-23-2017", 'visibility', 'visible');
+        }
+        else if (dateSlider == 4){
+            map.setLayoutProperty("date/12-24-2017", 'visibility', 'visible');
+        }
+    }
+}
+
+
+
+
 // City Wide Analysis
+function getCityWideAnalysisRadios1() {
+    cleanMapView();
+    //alert("here");
+    map.setLayoutProperty("incident_type/drug", 'visibility', 'visible');
+}
+
+function getCityWideAnalysisRadios2() {
+    cleanMapView();
+    //alert("here2");
+    map.setLayoutProperty("incident_type/shot", 'visibility', 'visible');
+    //alert("here3");
+}

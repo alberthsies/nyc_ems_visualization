@@ -290,7 +290,7 @@ map.on('load', function () {
 
     //
     //  data/daynight_rpt
-    //
+    //  'daynight_rpt/sunup', 'daynight_rpt/sundown'
     map.addLayer({
         'id': 'daynight_rpt/sunup',
         'type': 'fill',
@@ -337,8 +337,50 @@ map.on('load', function () {
 
     //
     //  data/weather_rpt
-    //
-    //TODO:
+    //  "weather_rpt/sunny", "weather_rpt/rainy"
+    map.addLayer({
+        'id': 'weather_rpt/sunny',
+        'type': 'fill',
+        'source': {
+            'type': 'geojson',
+            'data': 'data/weather_rpt/sunny.geojson'
+        },
+        "layout": {
+            "visibility": "none"
+        },
+        'paint': {
+            'fill-color': [
+                'interpolate',
+                ['linear'],
+                ['get', 'ranking_value'],
+                7, '#d0c727',
+                10, '#81806e',
+            ],
+            'fill-opacity': 0.5
+        }
+    });
+
+    map.addLayer({
+        'id': 'weather_rpt/rainy',
+        'type': 'fill',
+        'source': {
+            'type': 'geojson',
+            'data': 'data/weather_rpt/rainy.geojson'
+        },
+        "layout": {
+            "visibility": "none"
+        },
+        'paint': {
+            'fill-color': [
+                'interpolate',
+                ['linear'],
+                ['get', 'ranking_value'],
+                7, '#d0c727',
+                10, '#81806e',
+            ],
+            'fill-opacity': 0.5
+        }
+    });
 
     //=============================================================================
     // Incident Analysis
@@ -1831,6 +1873,61 @@ map.on('load', function () {
                 'SICK', '#a24ffe',
                 /* other */ '#ccc'
             ]
+        }
+    });
+
+
+    //=============================================================================
+    // City-Wide Analysis
+    //=============================================================================
+
+    //
+    // data/incident_type
+    // "incident_type/drug", "incident_type/shot"
+    map.addLayer({
+        'id': 'incident_type/drug',
+        'type': 'fill',
+        'source': {
+            'type': 'geojson',
+            'data': 'data/incident_type/drug.geojson'
+        },
+        "layout": {
+            "visibility": "none"
+        },
+        'paint': {
+            'fill-color': [
+                'interpolate',
+                ['linear'],
+                ['get', 'ranking_value'],
+                7, '#d0c727',
+                10, '#81806e',
+            ],
+            'fill-opacity': 0.5
+        }
+    });
+
+    map.addLayer({
+        'id': 'incident_type/shot',
+        'type': 'fill',
+        'source': {
+            'type': 'geojson',
+            'data': 'data/incident_type/shot.geojson'
+        },
+        "layout": {
+            "visibility": "none"
+        },
+        'paint': {
+            'fill-color': [
+                'interpolate',
+                ['linear'],
+                ['get', 'ranking_value'],
+                0, '#5d9fcf',
+                2, '#d8d7ca',
+                4, '#f3a233',
+                6, '#eb6033',
+                8, '#b23f24',
+            ],
+            'fill-opacity': 0.5
         }
     });
 
