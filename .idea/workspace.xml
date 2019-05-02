@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8efd254-6279-4667-87dd-7149fd944734" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/daynight_rpt/sundown.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/data/daynight_rpt/sundown.geojson" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/daynight_rpt/sunup.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/data/daynight_rpt/sunup.geojson" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/incident_type/drug.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/data/incident_type/drug.geojson" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/incident_type/shot.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/data/incident_type/shot.geojson" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/weather_rpt/rainy.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/data/weather_rpt/rainy.geojson" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/weather_rpt/sunny.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/data/weather_rpt/sunny.geojson" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/analysisPick.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/analysisPick.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/sidebar1.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sidebar1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/sidebar2.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sidebar2.js" afterDir="false" />
-    </list>
+    <list default="true" id="e8efd254-6279-4667-87dd-7149fd944734" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -490,12 +478,12 @@
       <workItem from="1555659234579" duration="10037000" />
       <workItem from="1556516216560" duration="2823000" />
       <workItem from="1556598854424" duration="1004000" />
-      <workItem from="1556717175675" duration="49488000" />
+      <workItem from="1556717175675" duration="49647000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63352000" />
+    <option name="totallyTimeSpent" value="63511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
