@@ -67,12 +67,12 @@ map.on('load', function () {
                 'interpolate',
                 ['linear'],
                 ['get', 'average_response'],
-                5, '#4b9d85',
-                7, '#5b9f6a',
-                9, '#92b34b',
-                11, '#f1c331',
-                13, '#f29f3b',
-                15, '#cf664a',
+                1, '#4b9d85',
+                200, '#5b9f6a',
+                400, '#92b34b',
+                600, '#f1c331',
+                800, '#f29f3b',
+                1000, '#cf664a',
             ],
             'fill-opacity': 0.5
         }
@@ -93,12 +93,12 @@ map.on('load', function () {
                 'interpolate',
                 ['linear'],
                 ['get', 'average_response'],
-                5, '#4b9d85',
-                7, '#5b9f6a',
-                9, '#92b34b',
-                11, '#f1c331',
-                13, '#f29f3b',
-                15, '#cf664a',
+                1, '#4b9d85',
+                200, '#5b9f6a',
+                400, '#92b34b',
+                600, '#f1c331',
+                800, '#f29f3b',
+                1000, '#cf664a',
             ],
             'fill-opacity': 0.5
         }
@@ -119,12 +119,12 @@ map.on('load', function () {
                 'interpolate',
                 ['linear'],
                 ['get', 'average_response'],
-                5, '#4b9d85',
-                7, '#5b9f6a',
-                9, '#92b34b',
-                11, '#f1c331',
-                13, '#f29f3b',
-                15, '#cf664a',
+                1, '#4b9d85',
+                200, '#5b9f6a',
+                400, '#92b34b',
+                600, '#f1c331',
+                800, '#f29f3b',
+                1000, '#cf664a',
             ],
             'fill-opacity': 0.5
         }
@@ -145,12 +145,12 @@ map.on('load', function () {
                 'interpolate',
                 ['linear'],
                 ['get', 'average_response'],
-                5, '#4b9d85',
-                7, '#5b9f6a',
-                9, '#92b34b',
-                11, '#f1c331',
-                13, '#f29f3b',
-                15, '#cf664a',
+                1, '#4b9d85',
+                200, '#5b9f6a',
+                400, '#92b34b',
+                600, '#f1c331',
+                800, '#f29f3b',
+                1000, '#cf664a',
             ],
             'fill-opacity': 0.5
         }
@@ -171,12 +171,12 @@ map.on('load', function () {
                 'interpolate',
                 ['linear'],
                 ['get', 'average_response'],
-                5, '#4b9d85',
-                7, '#5b9f6a',
-                9, '#92b34b',
-                11, '#f1c331',
-                13, '#f29f3b',
-                15, '#cf664a',
+                1, '#4b9d85',
+                200, '#5b9f6a',
+                400, '#92b34b',
+                600, '#f1c331',
+                800, '#f29f3b',
+                1000, '#cf664a',
             ],
             'fill-opacity': 0.5
         }
@@ -197,12 +197,12 @@ map.on('load', function () {
                 'interpolate',
                 ['linear'],
                 ['get', 'average_response'],
-                5, '#4b9d85',
-                7, '#5b9f6a',
-                9, '#92b34b',
-                11, '#f1c331',
-                13, '#f29f3b',
-                15, '#cf664a',
+                1, '#4b9d85',
+                200, '#5b9f6a',
+                400, '#92b34b',
+                600, '#f1c331',
+                800, '#f29f3b',
+                1000, '#cf664a',
             ],
             'fill-opacity': 0.5
         }
@@ -223,12 +223,12 @@ map.on('load', function () {
                 'interpolate',
                 ['linear'],
                 ['get', 'average_response'],
-                5, '#4b9d85',
-                7, '#5b9f6a',
-                9, '#92b34b',
-                11, '#f1c331',
-                13, '#f29f3b',
-                15, '#cf664a',
+                1, '#4b9d85',
+                200, '#5b9f6a',
+                400, '#92b34b',
+                600, '#f1c331',
+                800, '#f29f3b',
+                1000, '#cf664a',
             ],
             'fill-opacity': 0.5
         }
@@ -296,7 +296,7 @@ map.on('load', function () {
         'type': 'fill',
         'source': {
             'type': 'geojson',
-            'data': 'data/daynight_rpt/sunup.geojson'
+            'data': 'data/daynight_rpt/sunup_zip.geojson'
         },
         "layout": {
             "visibility": "none"
@@ -305,9 +305,13 @@ map.on('load', function () {
             'fill-color': [
                 'interpolate',
                 ['linear'],
-                ['get', 'ranking_value'],
-                7, '#d0c727',
-                10, '#81806e',
+                ['get', 'average_response'],
+                1, '#4b9d85',
+                200, '#5b9f6a',
+                400, '#92b34b',
+                600, '#f1c331',
+                800, '#f29f3b',
+                1000, '#cf664a',
             ],
             'fill-opacity': 0.5
         }
@@ -318,7 +322,7 @@ map.on('load', function () {
         'type': 'fill',
         'source': {
             'type': 'geojson',
-            'data': 'data/daynight_rpt/sundown.geojson'
+            'data': 'data/daynight_rpt/sundown_zip.geojson'
         },
         "layout": {
             "visibility": "none"
@@ -327,9 +331,13 @@ map.on('load', function () {
             'fill-color': [
                 'interpolate',
                 ['linear'],
-                ['get', 'ranking_value'],
-                7, '#d0c727',
-                10, '#81806e',
+                ['get', 'average_response'],
+                1, '#4b9d85',
+                200, '#5b9f6a',
+                400, '#92b34b',
+                600, '#f1c331',
+                800, '#f29f3b',
+                1000, '#cf664a',
             ],
             'fill-opacity': 0.5
         }
