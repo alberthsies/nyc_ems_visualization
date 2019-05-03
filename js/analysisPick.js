@@ -169,6 +169,11 @@ function cleanMapView() {
     map.setLayoutProperty("date/07-04-2017", 'visibility', 'none');
     map.setLayoutProperty("date/11-23-2017", 'visibility', 'none');
     map.setLayoutProperty("date/12-24-2017", 'visibility', 'none');
+    map.setLayoutProperty("year_rpt/2013", 'visibility', 'none');
+    map.setLayoutProperty("year_rpt/2014", 'visibility', 'none');
+    map.setLayoutProperty("year_rpt/2015", 'visibility', 'none');
+    map.setLayoutProperty("year_rpt/2016", 'visibility', 'none');
+    map.setLayoutProperty("year_rpt/2017", 'visibility', 'none');
 }
 
 // Show map
@@ -178,6 +183,24 @@ function getResponseTimeAnalysisRadios() {
     cleanMapView();
     //"severity_rpt/sev1", "severity_rpt/sev2", "severity_rpt/sev3", "severity_rpt/sev4", "severity_rpt/sev5", "severity_rpt/sev6", "severity_rpt/sev7"
     if (responseTimeAnalysisRadios[0].checked){
+        var newYearSlider = document.getElementById('newYearSlider').value;
+        if (newYearSlider == 2013){
+            map.setLayoutProperty("year_rpt/2013", 'visibility', 'visible');
+        }
+        else if (newYearSlider == 2014){
+            map.setLayoutProperty("year_rpt/2014", 'visibility', 'visible');
+        }
+        else if (newYearSlider == 2015){
+            map.setLayoutProperty("year_rpt/2015", 'visibility', 'visible');
+        }
+        else if (newYearSlider == 2016){
+            map.setLayoutProperty("year_rpt/2016", 'visibility', 'visible');
+        }
+        else if (newYearSlider == 2017){
+            map.setLayoutProperty("year_rpt/2017", 'visibility', 'visible');
+        }
+    }
+    else if (responseTimeAnalysisRadios[1].checked){
         var severitySlider = document.getElementById('severitySlider').value;
         if (severitySlider == 1){
             map.setLayoutProperty("severity_rpt/sev1", 'visibility', 'visible');
@@ -202,7 +225,7 @@ function getResponseTimeAnalysisRadios() {
         }
     }
 
-    else if (responseTimeAnalysisRadios[1].checked){
+    else if (responseTimeAnalysisRadios[2].checked){
         //"temp_rpt/temp0", "temp_rpt/temp1"
         var tempSlider = document.getElementById('tempSlider').value;
         if (tempSlider == 0) {
@@ -213,8 +236,8 @@ function getResponseTimeAnalysisRadios() {
         }
 
     }
-
-    else if (responseTimeAnalysisRadios[2].checked){
+    /*
+    else if (responseTimeAnalysisRadios[3].checked){
         //'daynight_rpt/sunup', 'daynight_rpt/sundown'
         //var tempSlider = document.getElementsByName('responseTimeFilterRadioTime2').value;
         //if (tempSlider == day) {
@@ -227,10 +250,10 @@ function getResponseTimeAnalysisRadios() {
         //}
     }
 
-    else if (responseTimeAnalysisRadios[3].checked){
+    else if (responseTimeAnalysisRadios[4].checked){
 
         //var responseTimeAnalysisRadios2 = document.getElementsByName('responseTimeAnalysisRadios2').value;
-    }
+    }*/
 }
 
 function getResponseTimeAnalysisRadios2() {

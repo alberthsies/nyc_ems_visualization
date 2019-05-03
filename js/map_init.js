@@ -49,6 +49,137 @@ map.on('load', function () {
     // Response Time Analysis
     //=============================================================================
     //
+    //  data/year_rpt
+    //
+    map.addLayer({
+        'id': 'year_rpt/2013',
+        'type': 'fill',
+        'source': {
+            'type': 'geojson',
+            'data': 'data/year_rpt/2013.geojson'
+        },
+        "layout": {
+            "visibility": "none"
+        },
+        'paint': {
+            'fill-color': [
+                'interpolate',
+                ['linear'],
+                ['get', 'ranking_value'],
+                7.054, 'rgba(0,136,104,0.5)',
+                7.248, 'rgba(251,174,35,0.5)',
+                7.296, 'rgba(92,149,73,0.5)',
+                7.423, 'rgba(203,195,50,0.5)',
+                7.67, 'rgba(196,49,36,0.5)',
+
+
+            ],
+            'fill-opacity': 0.5
+        }
+    });
+
+    map.addLayer({
+        'id': 'year_rpt/2014',
+        'type': 'fill',
+        'source': {
+            'type': 'geojson',
+            'data': 'data/year_rpt/2014.geojson'
+        },
+        "layout": {
+            "visibility": "none"
+        },
+        'paint': {
+            'fill-color': [
+                'interpolate',
+                ['linear'],
+                ['get', 'ranking_value'],
+                7.0509, 'rgba(0,136,104,0.49956053303)',
+                8.295, 'rgba(92,149,73,0.6369243421)',
+                8.464, 'rgba(251,174,35,0.66777041942)',
+                8.629, 'rgba(203,195,50,0.66246800485)',
+                10.528, 'rgba(196,49,36,0.87262059973)',
+            ],
+            'fill-opacity': 0.5
+        }
+    });
+
+    map.addLayer({
+        'id': 'year_rpt/2015',
+        'type': 'fill',
+        'source': {
+            'type': 'geojson',
+            'data': 'data/year_rpt/2015.geojson'
+        },
+        "layout": {
+            "visibility": "none"
+        },
+        'paint': {
+            'fill-color': [
+                'interpolate',
+                ['linear'],
+                ['get', 'ranking_value'],
+                7.339, 'rgba(0,136,104,0.54040260844)',
+                8.345, 'rgba(92,149,73,0.78083881578)',
+                8.413, 'rgba(251,174,35,0.66073399558)',
+                9.863, 'rgba(203,195,50,0.82870806951)',
+                10.675, 'rgba(196,49,36,0.89178617992)',
+            ],
+            'fill-opacity': 0.5
+        }
+    });
+
+    map.addLayer({
+        'id': 'year_rpt/2016',
+        'type': 'fill',
+        'source': {
+            'type': 'geojson',
+            'data': 'data/year_rpt/2016.geojson'
+        },
+        "layout": {
+            "visibility": "none"
+        },
+        'paint': {
+            'fill-color': [
+                'interpolate',
+                ['linear'],
+                ['get', 'ranking_value'],
+                7.006, 'rgba(0,136,104,0.49319535015)',
+                7.717, 'rgba(92,149,73,0.55770285087)',
+                8.478, 'rgba(251,174,35,0.66970198675)',
+                8.786, 'rgba(196,49,36,0.64550195567)',
+                9.335, 'rgba(203,195,50,0.75757779873)',
+            ],
+            'fill-opacity': 0.5
+        }
+    });
+
+    map.addLayer({
+        'id': 'year_rpt/2017',
+        'type': 'fill',
+        'source': {
+            'type': 'geojson',
+            'data': 'data/year_rpt/2017.geojson'
+        },
+        "layout": {
+            "visibility": "none"
+        },
+        'paint': {
+            'fill-color': [
+                'interpolate',
+                ['linear'],
+                ['get', 'ranking_value'],
+                6.378, 'rgba(0,136,104,0.40416784802)',
+                7.189, 'rgba(92,149,73,0.48533442982)',
+                8.289, 'rgba(251,174,35,0.64362582781)',
+                8.608, 'rgba(196,49,36,0.62229465449)',
+                9.13, 'rgba(203,195,50,0.72996093223)',
+
+            ],
+            'fill-opacity': 0.5
+        }
+    });
+
+    //
     //  data/severity_rpt
     //  "severity_rpt/sev1", "severity_rpt/sev2", "severity_rpt/sev3", "severity_rpt/sev4", "severity_rpt/sev5", "severity_rpt/sev6", "severity_rpt/sev7"
 

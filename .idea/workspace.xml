@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8efd254-6279-4667-87dd-7149fd944734" name="Default Changelist" comment="" />
+    <list default="true" id="e8efd254-6279-4667-87dd-7149fd944734" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/analysisPick.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/analysisPick.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/map_init.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/map_init.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,31 +18,17 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/sidebar1.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="47" column="58" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/sidebar2.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9">
-              <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            <state relative-caret-position="473">
+              <caret line="78" column="99" selection-start-line="78" selection-start-column="99" selection-end-line="78" selection-end-column="99" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#3995#4001#0" expanded="true" />
+                <element signature="e#4001#4007#0" expanded="true" />
+                <element signature="e#4061#4067#0" expanded="true" />
+                <element signature="e#4145#4151#0" expanded="true" />
                 <element signature="e#5874#5880#0" expanded="true" />
                 <element signature="e#5880#5886#0" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -67,47 +57,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/forbetterweb-cover-landing-gh-pages/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="65" column="128" selection-start-line="65" selection-start-column="128" selection-end-line="65" selection-end-column="128" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/sidebar3.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="27" selection-start-column="27" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/analysisPick.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="56" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="56" />
+            <state relative-caret-position="100">
+              <caret line="192" column="40" selection-start-line="192" selection-start-column="40" selection-end-line="192" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/map_init.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28740">
-              <caret line="1916" column="31" selection-start-line="1916" selection-start-column="31" selection-end-line="1916" selection-end-column="31" />
+            <state relative-caret-position="537">
+              <caret line="173" column="55" selection-start-line="173" selection-start-column="55" selection-end-line="173" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/incident_type/drug.geojson">
+        <entry file="file://$PROJECT_DIR$/data/year_rpt/2017.geojson">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="292" selection-start-line="5" selection-start-column="292" selection-end-line="5" selection-end-column="292" />
+            <state relative-caret-position="-1061">
+              <caret line="46" column="269" selection-start-line="46" selection-start-column="264" selection-end-line="46" selection-end-column="269" />
             </state>
           </provider>
         </entry>
@@ -148,6 +120,8 @@
       <find>switch</find>
       <find>viz1556698989494</find>
       <find>responseTimeFilter</find>
+      <find>rough&quot;: &quot;Staten Island&quot;,</find>
+      <find>ranking_value&quot;:</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -163,16 +137,16 @@
         <option value="$PROJECT_DIR$/js/sidebar.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/js/sidebar1.js" />
-        <option value="$PROJECT_DIR$/js/analysisPick.js" />
         <option value="$PROJECT_DIR$/js/sidebar2.js" />
         <option value="$PROJECT_DIR$/js/sidebar3.js" />
-        <option value="$PROJECT_DIR$/js/map_init.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/forbetterweb-cover-landing-gh-pages/index.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/analysisPick.js" />
+        <option value="$PROJECT_DIR$/js/map_init.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -190,6 +164,17 @@
             <path>
               <item name="nyc_ems_visualization" type="b2602c69:ProjectViewProjectNode" />
               <item name="nyc_ems_visualization" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nyc_ems_visualization" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nyc_ems_visualization" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nyc_ems_visualization" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nyc_ems_visualization" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="year_rpt" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nyc_ems_visualization" type="b2602c69:ProjectViewProjectNode" />
@@ -256,18 +241,18 @@
       <workItem from="1556516216560" duration="2823000" />
       <workItem from="1556598854424" duration="1004000" />
       <workItem from="1556717175675" duration="55098000" />
-      <workItem from="1556865237751" duration="687000" />
+      <workItem from="1556865237751" duration="10966000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69649000" />
+    <option name="totallyTimeSpent" value="79928000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="401" y="0" width="1039" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18534179" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25834972" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -286,7 +271,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18534179" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25834972" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -408,27 +393,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/sidebar3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" selection-start-column="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/analysisPick.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="56" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/map_init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28740">
-          <caret line="1916" column="31" selection-start-line="1916" selection-start-column="31" selection-end-line="1916" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/incident_type/drug.geojson">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -450,13 +414,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/sidebar3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forbetterweb-cover-landing-gh-pages/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="65" column="128" selection-start-line="65" selection-start-column="128" selection-end-line="65" selection-end-column="128" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        <state relative-caret-position="473">
+          <caret line="78" column="99" selection-start-line="78" selection-start-column="99" selection-end-line="78" selection-end-column="99" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#3995#4001#0" expanded="true" />
+            <element signature="e#4001#4007#0" expanded="true" />
+            <element signature="e#4061#4067#0" expanded="true" />
+            <element signature="e#4145#4151#0" expanded="true" />
             <element signature="e#5874#5880#0" expanded="true" />
             <element signature="e#5880#5886#0" expanded="true" />
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -484,10 +466,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forbetterweb-cover-landing-gh-pages/index.html">
+    <entry file="file://$PROJECT_DIR$/data/year_rpt/2013.geojson">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="65" column="128" selection-start-line="65" selection-start-column="128" selection-end-line="65" selection-end-column="128" />
+        <state relative-caret-position="2099">
+          <caret line="172" column="304" lean-forward="true" selection-start-line="172" selection-start-column="304" selection-end-line="172" selection-end-column="309" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/year_rpt/2014.geojson">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2203" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/year_rpt/2015.geojson">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="177" column="256" lean-forward="true" selection-start-line="177" selection-start-column="256" selection-end-line="177" selection-end-column="256" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/year_rpt/2016.geojson">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/year_rpt/2017.geojson">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1061">
+          <caret line="46" column="269" selection-start-line="46" selection-start-column="264" selection-end-line="46" selection-end-column="269" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/analysisPick.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="192" column="40" selection-start-line="192" selection-start-column="40" selection-end-line="192" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/map_init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="173" column="55" selection-start-line="173" selection-start-column="55" selection-end-line="173" selection-end-column="55" />
         </state>
       </provider>
     </entry>
